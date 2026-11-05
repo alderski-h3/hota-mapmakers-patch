@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-beta.5",
+  "status": "published",
+  "date": "2026-11-05",
+  "downloads": {
+    "bundle": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota-mapmakers-patch-1.0.0-beta.5.zip",
+    "dll": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota_mapmakers_patch.dll",
+    "launcher": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota_mapmakers_patch_launcher.exe"
+  }
+}

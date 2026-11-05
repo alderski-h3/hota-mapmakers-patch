@@ -1,0 +1,14 @@
+H3PATCH-SIGNED-1
+rsa-sha256=88a9445037a6b9c8a38f11d2e75bc332daaf0d8327e44da50f4baeff61e71e4e259427705ecef3be5094b32b6ff17b0377cbf9eeb18d4f24a04bcb7c318fc95b28c9ca4733a889b34b9f5e30f6d567a0b8a3f84ce18b863afba52a65c8d2398e81a7242bcc1eefb0853b574b0c8af2b296d08f445cf6c12fddc6635ac6044c9875d203bc50908aa8ea2ceb7ab23c0d6a313b7eb2059dda0c1deb4c5a9547e7ca240e254a02966f80da64377a99809f63abbd46c56f0228c5c1d23ea35c87d9555167c519d11802d35654db2831cdb231d93cfd54ff248d4a7fa883cd0f7158b52125d01a43c079d486bd4a280cccd3e7c4a18cde4dc63e8874f75f725d6de38b
+H3PATCH-BUNDLE-1
+version=1.0.0-beta.5
+sequence=2026110505
+bytes=1527296
+sha256=78692dc882c4df96c0151581754b6126057b5cf37ec5e6c77810b672e21e5352
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota_mapmakers_patch.dll
+launcher-bytes=501248
+launcher-sha256=f582c5f842dc539f436811a02192755176ac5731e0b1022298c56df6a697cbcd
+launcher-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota_mapmakers_patch_launcher.exe
+notes:
+- HotA Mapmaker’s Patch: updated name, filenames and presentation.
+- Patch and launcher updates are available from this repository.
