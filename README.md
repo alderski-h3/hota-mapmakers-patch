@@ -8,9 +8,9 @@ maintained separately.
 
 ## Download
 
-**[Download 1.0.0-beta.5](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.5/hota-mapmakers-patch-1.0.0-beta.5.zip)** — patch DLL, optional launcher and notices.
+**[Download 1.0.0-beta.6](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.6/hota-mapmakers-patch-1.0.0-beta.6.zip)** — patch DLL, optional launchers and notices.
 
-[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.5).
+[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.6).
 GitHub’s automatic source archives contain this site’s documentation, not the
 patch implementation.
 
@@ -19,7 +19,7 @@ patch implementation.
 - Pathfinding: travel cost, arrival days, movement profiles, alternatives and waypoints.
 - Battlefield Explorer: previews, metric filters, searches, heatmaps and favourites.
 - Visibility: player coverage, ghost heroes, patrol, darkness and Dimension Door previews.
-- Advanced Find: artifacts, spells, secondary skills, heroes, creatures, quests and resources in supported objects and events.
+- Advanced Find: artifacts, spells, secondary skills, heroes, creatures, quests, resources and bonuses in supported objects and events.
 - Randomness inspector: artifact/spell pool bounds and exclusions, without random simulations.
 - In-place object ordering, portrait chooser and map area copy/cut/paste.
 
@@ -33,6 +33,9 @@ Randomness inspector are not searched.
 1. Back up your maps and close the editor.
 2. Put `hota_mapmakers_patch.dll` and the optional `hota_mapmakers_patch_launcher.exe` beside `h3hota_maped.exe`.
 3. Open the launcher and choose **Launch patched editor**, or start the editor with `/p:hota_mapmakers_patch.dll`.
+
+For direct launch, put `hota_mapmakers_editor.exe` from the ZIP in the same folder
+and double-click it. Use the patch launcher to manage updates.
 
 The launcher checks for signed updates on opening. Choose **Install update**;
 if the editor is open, close it normally and click **Retry**. Updates include
