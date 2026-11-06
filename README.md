@@ -8,9 +8,9 @@ maintained separately.
 
 ## Download
 
-**[Download 1.0.0-beta.6](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.6/hota-mapmakers-patch-1.0.0-beta.6.zip)** — patch DLL, optional launchers and notices.
+**[Download 1.0.0-beta.7](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota-mapmakers-patch-1.0.0-beta.7.zip)** — patch DLL, optional launchers and notices.
 
-[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.6).
+[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.7).
 GitHub’s automatic source archives contain this site’s documentation, not the
 patch implementation.
 

@@ -1,12 +1,13 @@
 H3PATCH-SIGNED-1
-rsa-sha256=6edf3f5d708ea89f683144b63cbb9ec2f23b377bcaa5f579b99e372fca4e55aeecf531a9ff73dcfb8b80f2d53e3f75ea201f3f5e6fe9e91a86ca07f7fbee3357c801eec84ca960d45cf67e7516ba174fb2780970411707aab8441f4d39a572d53e6978bd04a282f2bbe8d87581acd55d0d807c5ae18f53d1e648a9d7962d8480dbf6b93b76f895a859dca7b9cacd3655847a69acf88251ae286a625fb12bc3f11f5bafdfb08009da1fabf9ec9a698721ba9913763a6cd77e28a95d7e16a3a35fa354f73e241bcebe5429e2f6acf1cb95b586aa95bbee3049174bfd4fb2625b28aad3a734734d6365c424c5431db3759135286c48bf114c71a122e57009a82b88
+rsa-sha256=aa8d3593c04b9961bcc5009d191a6999bd3122c4a9497feb7d34bf8edc41051dfc28bf9d03efe193881944d2d45ebc1f52b2c2e5693e97e76bc4d819c86abd5933b2cadd467a2977aeba76a1b30d60dc59cdc12be4caecb535ff9a1e76d4e05086323eaec320588ecdb1f0da693810c160ef7eac04e0261fe0154c3f2e54af258a7b88ac385f0a87ffe75e817f1e99ca814351c039610dd6a16bb480a5259f8cb5949cba84c231ff867d9e3012faf48421d2b65555b7cc962dad0fdeb9f0186c4f244838903391b2464840d9bd8ee1a51fde38974e251e0fd46e3e4a24898c25ce0861c8a8801876881f60d03af182a87e327bbb6d86cc981016ddcdca6b99d3
 H3PATCH-UPDATE-1
-version=1.0.0-beta.6
-sequence=2026110506
-bytes=1536512
-sha256=182da5fd0c8a46f6d38cd0148e9d2b4ddb332b97255d3398b101ef5d1d186625
-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.6/hota_mapmakers_patch.dll
+version=1.0.0-beta.7
+sequence=2026110601
+bytes=1540608
+sha256=b9261e3ed0c1f8dcd39af25b36c81f1d2c20b74b25ce0054e923295e518a7d6b
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch.dll
 notes:
-Advanced Find can now search for primary skills, experience, movement points, spell points, morale and luck from map objects and rewards.
-
-The ZIP includes a one-click patched editor launcher. Starting the editor from the patch launcher keeps its update status visible.
+- Advanced Find can show or exclude random spells and artifacts, including possible bank reward tiers. Spell searches include guaranteed Mage Guild spells.
+- Added object reinforcements and creatures from supported extended-event combats.
+- Fixed stale results after dragging objects off the map, plus Seer's Hut bonus rewards, random-monster quest targets and bonus sorting.
+- The launcher closes after starting the patched editor.

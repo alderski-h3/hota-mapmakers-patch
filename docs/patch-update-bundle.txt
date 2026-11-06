@@ -1,15 +1,16 @@
 H3PATCH-SIGNED-1
-rsa-sha256=8ae5bdfc3396a43158fd7315a991eea8adc8b0f1d2e0333ee532deb2f809b3ee9658f7e7a5aba96463e73c61bfa34fdcd23fb1436521cd7799c6c6050e532182ffe1ca5065486052c5db6409153ae3de8c16241243b510a21464903ec8d7e4cb6963432507fc6121d745a774d4c7c71bf0498e40946581878489c2b66ea47c0ef0a672ed718d59ef42085a9a0a1d6e31f21dda445b043bc4ef27723f544c437f434bfc6023fe24e71ef91d419a9722b994431c6897c8b0357b8efa1ec7a28b29dfb058236b98e768251fbb70d99484417824fdcbcc72ef74c5648ed39ff4c4c4d2c475a639416eaf168050467d0396f61432fe756813c7e578c50db2171f3b62
+rsa-sha256=465771810d14400a3fcbdc55e62ffe54c22d9148875070e79fa6949f0e37b3216bc201ab152444d5e5962510cd005e7305ae7f66f62fc5ded81e83457a05e7d455b574fdedb38cfcf444e1838cefca0fc77510984ffe36a32a0d59a85db3b727330227b05798dcd561a7351d991d196fd9c7850b9693cae7aaee1c91b8afdc4832f339b07e9379bc6a3e5339a0d701aad28530dcb65d03ac7a9b630ff2bfd84b4367455773f727dbb4072a1dde5eb043ba29e972d1aa75fdd0ac57653cae47b887215e95bb339c05c9905a32598ba6dc01f68a56bba4f526e84428a3b53e4020d5a67b46befb24fe84e9551f9ec2f44b5b8c9e204097728acaf73ca4d6fc5777
 H3PATCH-BUNDLE-1
-version=1.0.0-beta.6
-sequence=2026110506
-bytes=1536512
-sha256=182da5fd0c8a46f6d38cd0148e9d2b4ddb332b97255d3398b101ef5d1d186625
-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.6/hota_mapmakers_patch.dll
-launcher-bytes=502784
-launcher-sha256=b51a6bee7a9647d36ad4efd6e3c9c03e703a52c92a3797ef29ab9eba60d69f16
-launcher-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.6/hota_mapmakers_patch_launcher.exe
+version=1.0.0-beta.7
+sequence=2026110601
+bytes=1540608
+sha256=b9261e3ed0c1f8dcd39af25b36c81f1d2c20b74b25ce0054e923295e518a7d6b
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch.dll
+launcher-bytes=503808
+launcher-sha256=4beea874c3416f222133eb0de089df8004b3fca1a4141c38be345a3d04725a1b
+launcher-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch_launcher.exe
 notes:
-Advanced Find can now search for primary skills, experience, movement points, spell points, morale and luck from map objects and rewards.
-
-The ZIP includes a one-click patched editor launcher. Starting the editor from the patch launcher keeps its update status visible.
+- Advanced Find can show or exclude random spells and artifacts, including possible bank reward tiers. Spell searches include guaranteed Mage Guild spells.
+- Added object reinforcements and creatures from supported extended-event combats.
+- Fixed stale results after dragging objects off the map, plus Seer's Hut bonus rewards, random-monster quest targets and bonus sorting.
+- The launcher closes after starting the patched editor.
