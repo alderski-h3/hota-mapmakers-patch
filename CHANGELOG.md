@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0-beta.9 — 2026-11-07
+
+- Corrected Dragon Fly Hive guards in Advanced Find: Dragon Flies, not Serpent Flies.
+- Timed-event search results now open the matching event automatically.
+- Updated the launcher artwork and fixed-size layout, with a top-right Exit button and a white changelog panel.
+- Updates and restoration now include the patch, update launcher and one-click editor launcher together, including older or missing one-click copies.
+
 ## 1.0.0-beta.8 — 2026-11-07
 
 - Redesigned the native launcher with new artwork, clearer update status and a compact changelog.

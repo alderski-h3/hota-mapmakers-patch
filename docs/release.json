@@ -1,10 +1,10 @@
 {
-  "version": "1.0.0-beta.8",
+  "version": "1.0.0-beta.9",
   "status": "published",
   "date": "2026-11-07",
   "downloads": {
-    "bundle": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota-mapmakers-patch-1.0.0-beta.8.zip",
-    "dll": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch.dll",
-    "launcher": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch_launcher.exe"
+    "bundle": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota-mapmakers-patch-1.0.0-beta.9.zip",
+    "dll": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota_mapmakers_patch.dll",
+    "launcher": "https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota_mapmakers_patch_launcher.exe"
   }
 }

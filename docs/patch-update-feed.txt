@@ -1,14 +1,13 @@
 H3PATCH-SIGNED-1
-rsa-sha256=3bbf36643765d295d51acbcba1b9fb38b394d85171fcaead809efd2f478219e5d4a9eb35cebabb8a53aeed03cbb2b3755cd7e281b9e416619b40b4e32810e361180b14ed806cbe775df5b946c35d23a7880dfb7958ea0881dba6ff45fd95de8cf4ab44a06587c2f48232bc40b2a2b629b3f6ecf4b7c856e20333356206cbdfc5b252566f4ac067de080b68ceefc00f741d3fbde2849ecf0696def7b7092bb26690bfc974f04ca2fe73a4d9615b11d101f249d7704d8e6a42f0f8af83c3181816f15e23ef50f9734d354fd5338e8ad8dc4d04ada064442bec4acade70e763394ceb0e27bc6410f56fa7588ed775c5340e608b47bdb0f58292772bfbfe7e7177c0
+rsa-sha256=ae2f728a00ee4e1b0162ffa82e6a02923faa1de5442ff2dc09c0144b3cf487aadb9ebffccb92086eb2d054e652d954123b7d1ef294dab5ad924e6c94d54f3dfcc3a0103a58e06ab2c75c2504f4eb14675175d30a995bed83bf677c7326d724e47dc682e895cee76f5cea54b6507c4c431ee5df967bc8cb465762bb8a450487c2c966642d01c957d8c4158eb4a9252095d5214397a1e2a1a353dbddff8a9b37ed1d8ea5ae4ba10a99947fe6d4a8102c92dc61b8c40606d058fcb126bb921ea2dcabc2b1950615cbc162a73c5990210c4d2d0a826253676d4e36d80176e897cc448d55bda662606e5f4ee0f4da4b048337def9971587844a1d148a0787f86d018d
 H3PATCH-UPDATE-1
-version=1.0.0-beta.8
-sequence=2026110701
-bytes=1549312
-sha256=189719c91872c89a9c404aa5a472b6587f96b0e39c66ee1de578e496366efb5e
-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch.dll
+version=1.0.0-beta.9
+sequence=2026110702
+bytes=1552896
+sha256=fce1a684d606653d92fd5aeae7078bfb8ae62e91775b487788fd4b5d4d40547a
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota_mapmakers_patch.dll
 notes:
-- Redesigned native launcher with new artwork, clearer update status and a compact changelog.
-- Install updates without a second confirmation. Launch focuses an editor already running from the same installation.
-- Restore the previous patch and launcher together, with a separate local recovery option if the launcher cannot start.
-- Update files and backups now use a dedicated HotA Mapmakers Patch folder.
-- Advanced Find omits chance-only artifact containers while retaining possible artifact classes for creature banks with an unspecified variant.
+- Corrected Dragon Fly Hive guards in Advanced Find: Dragon Flies, not Serpent Flies.
+- Timed-event search results now open the matching event automatically.
+- Updated the launcher artwork and fixed-size layout, with a top-right Exit button and a white changelog panel.
+- Updates and restoration now include the patch, update launcher and one-click editor launcher together, including older or missing one-click copies.

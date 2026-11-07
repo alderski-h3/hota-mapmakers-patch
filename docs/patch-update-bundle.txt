@@ -1,17 +1,16 @@
 H3PATCH-SIGNED-1
-rsa-sha256=3cdd5fbac74d27d1792f58433ebc19b8f961b516ba71e4068bb40216c58b505967b879404018e1f2c5e686cbb4cea73f794d15b1099d49354cf7aa1cd438d6c44a7684dfc2214777ff2ab4b90d3739400be2cbec1d3eb08ae5ee61c38dc8d368041406d9c2a32237bd94c519c6a8cb157f175d3f2681a7178447603bf85a903ccfd00164ecab1db985b83e0ccdef33915691148e48cdcfd2d31b34667a23ccf5aae0f1f45fb2696913a4683261a8d340a21c932d98b70a49700250de7f441aefc93ef4238f457e65f91102fb02f87a3ce2c5dee258e409625da74cbeeed2533b84bfe887ce06b126849af1215e67caaf6923dcead4fbd6087d6bca26b2f17002
+rsa-sha256=9e140eeabb9681a9e9867ee5e078a165de9c2721387ca5fb51e4372e3b204320d40a318bd88b0d48efae06e259d22f54ba08ba6f2ff5e047da98d50e0e646069ac6bd94ffcf0c4926cc67e4cc511fe316d3a18d9c85cd47019ecf63d6c1890b4cbf33ed80ecd5856b5b3f078ff7ee1bb687f18193dc6826f9cbc41c37a67981f6597e89f4d025677394af45efbf82a3162614e96e5b1ff946c15ad08ebc4c85968e157978c37ade995ce6f423bfb29864c8709aca442ac149fa174501acc832214d3fba91d39164b99ffe52ea1d460dabb1abd651aad789b147fca579a024f7fe6e6fdb251eca8ac96fa4b43ab405c47269a9c987fe3a40ae7f811a4a2e6aa76
 H3PATCH-BUNDLE-1
-version=1.0.0-beta.8
-sequence=2026110701
-bytes=1549312
-sha256=189719c91872c89a9c404aa5a472b6587f96b0e39c66ee1de578e496366efb5e
-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch.dll
-launcher-bytes=9722880
-launcher-sha256=5fbc05938dba0bbc46dd873701c46213fd4922f75b8f9fd3d06a62b8a4be8573
-launcher-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch_launcher.exe
+version=1.0.0-beta.9
+sequence=2026110702
+bytes=1552896
+sha256=fce1a684d606653d92fd5aeae7078bfb8ae62e91775b487788fd4b5d4d40547a
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota_mapmakers_patch.dll
+launcher-bytes=9878528
+launcher-sha256=25eeb23a74c8145fbd3dfb434f24e122068d05d52ca303952049fbca2ea6ba25
+launcher-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.9/hota_mapmakers_patch_launcher.exe
 notes:
-- Redesigned native launcher with new artwork, clearer update status and a compact changelog.
-- Install updates without a second confirmation. Launch focuses an editor already running from the same installation.
-- Restore the previous patch and launcher together, with a separate local recovery option if the launcher cannot start.
-- Update files and backups now use a dedicated HotA Mapmakers Patch folder.
-- Advanced Find omits chance-only artifact containers while retaining possible artifact classes for creature banks with an unspecified variant.
+- Corrected Dragon Fly Hive guards in Advanced Find: Dragon Flies, not Serpent Flies.
+- Timed-event search results now open the matching event automatically.
+- Updated the launcher artwork and fixed-size layout, with a top-right Exit button and a white changelog panel.
+- Updates and restoration now include the patch, update launcher and one-click editor launcher together, including older or missing one-click copies.
