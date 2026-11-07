@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0-beta.8 — 2026-11-07
+
+- Redesigned the native launcher with new artwork, clearer update status and a compact changelog.
+- Install updates without a second confirmation. Launch focuses an editor already running from the same installation instead of opening another copy.
+- Restore the verified previous patch and launcher together. A separate local recovery entry remains available if the launcher cannot start.
+- Update files and backups now use a dedicated `HotA Mapmakers Patch` folder.
+- Advanced Find excludes chance-only artifact containers. Guaranteed artifacts remain searchable; creature banks with an unspecified variant still show their possible artifact classes.
+
 ## 1.0.0-beta.7 — 2026-11-06
 
 - Advanced Find can show or exclude random spells and artifacts. Random bank rewards show possible artifact tiers; spell searches include guaranteed Mage Guild spells.

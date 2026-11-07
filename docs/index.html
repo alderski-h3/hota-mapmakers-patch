@@ -21,22 +21,22 @@
       <p class="eyebrow">Heroes III · Horn of the Abyss</p>
       <h1 id="title">HotA<br>Mapmaker’s Patch</h1>
       <p class="lede">An unofficial map editor patch by alderski.</p>
-      <div class="release-line"><span class="status-dot" aria-hidden="true"></span><span id="release-status">1.0.0-beta.7 · 2026-11-06</span></div>
+      <div class="release-line"><span class="status-dot" aria-hidden="true"></span><span id="release-status">1.0.0-beta.8 · 2026-11-07</span></div>
     </section>
     <section id="download" class="download" aria-labelledby="download-title">
       <div><p class="eyebrow">Download</p><h2 id="download-title">The patch and launcher</h2>
         <p id="download-note">For verified HotA 1.8.1 installations. The ZIP includes the DLL and optional launcher. Back up your maps before using a prerelease build.</p>
       </div>
       <div class="download-actions" id="download-actions">
-        <a class="button primary" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota-mapmakers-patch-1.0.0-beta.7.zip">Download ZIP <span aria-hidden="true">↓</span></a>
-        <a class="button" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch.dll">DLL only <span aria-hidden="true">↓</span></a>
-        <a class="button" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch_launcher.exe">Launcher only <span aria-hidden="true">↓</span></a>
+        <a class="button primary" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota-mapmakers-patch-1.0.0-beta.8.zip">Download ZIP <span aria-hidden="true">↓</span></a>
+        <a class="button" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch.dll">DLL only <span aria-hidden="true">↓</span></a>
+        <a class="button" href="https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch_launcher.exe">Launcher only <span aria-hidden="true">↓</span></a>
       </div>
       <details class="installation"><summary>Installation</summary><ol>
         <li>Back up your maps and close the editor.</li>
         <li>Place <code>hota_mapmakers_patch.dll</code> and the optional <code>hota_mapmakers_patch_launcher.exe</code> beside <code>h3hota_maped.exe</code>.</li>
         <li>Open the launcher and choose <strong>Launch patched editor</strong>, or start the editor with <code>/p:hota_mapmakers_patch.dll</code>.</li>
-      </ol><p>The launcher checks for signed updates on opening. Choose <strong>Install update</strong>; if the editor is still running, close it normally and click <strong>Retry</strong>. Updates include the DLL and launcher. Rollback restores only the previous DLL; game and HotA updates are not included.</p><p>The Language dropdown shares the saved patch-language preference with Patch Options. Select it before launching the editor; native HotA text is unchanged.</p></details>
+      </ol><p>The launcher checks for signed updates on opening. Choose <strong>Install update</strong>; if the editor is still running, close it normally and click <strong>Retry</strong>. Updates include the DLL and launcher. <strong>Recovery → Restore previous version</strong> restores the verified previous pair; game and HotA updates are not included.</p><p>Update files and backups are kept in <code>HotA Mapmakers Patch</code>. If the launcher cannot start, close the editor normally and run <code>HotA Mapmakers Patch\recovery.exe</code>, or <code>hota_mapmakers_editor.exe --recover</code> from the ZIP.</p><p>The Language dropdown shares the saved patch-language preference with Patch Options. Select it before launching the editor; native HotA text is unchanged.</p></details>
     </section>
     <section id="about" class="about" aria-labelledby="about-title">
       <div class="section-heading"><p class="eyebrow">About</p><h2 id="about-title">What’s included</h2></div>
@@ -51,11 +51,11 @@
       <aside class="scope"><p>Non-standard editor features are off by default. Enable them deliberately in Patch Options.</p><p>English and draft Russian UI. Verified HotA 1.8.1 profiles only. Advanced Find inspects supported extended-event rewards without evaluating conditions. Advanced quest conditions and extended events in the Randomness inspector are not searched.</p></aside>
     </section>
     <section id="changelog" class="changelog" aria-labelledby="changelog-title">
-      <div class="section-heading"><p class="eyebrow">Changelog</p><h2 id="changelog-title">1.0.0-beta.7</h2><p class="muted">2026-11-06</p></div>
+      <div class="section-heading"><p class="eyebrow">Changelog</p><h2 id="changelog-title">1.0.0-beta.8</h2><p class="muted">2026-11-07</p></div>
       <div><ul>
-        <li>Advanced Find can filter random artifacts and spells, and includes guaranteed Mage Guild spells.</li>
-        <li>Search object reinforcements and creatures in supported extended-event combats.</li>
-        <li>Fixed stale results after dragging objects off the map. The launcher closes after starting the editor.</li>
+        <li>Redesigned native launcher, single-click updates and no duplicate editor launches.</li>
+        <li>Restore the previous patch and launcher together, with independent local recovery.</li>
+        <li>Update files use a dedicated folder. Advanced Find omits chance-only artifact containers.</li>
       </ul><a class="text-link" href="https://github.com/alderski-h3/hota-mapmakers-patch/blob/main/CHANGELOG.md">Full changelog ↗</a></div>
     </section>
     <section class="contact"><h2>Found a bug?</h2><p>Contact <strong>alderski</strong> on Discord. Include the patch version, Diagnostics rows, coordinates and steps to reproduce.</p><a class="text-link" href="https://github.com/alderski-h3/hota-mapmakers-patch/issues">GitHub issues ↗</a></section>

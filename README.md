@@ -8,9 +8,9 @@ maintained separately.
 
 ## Download
 
-**[Download 1.0.0-beta.7](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota-mapmakers-patch-1.0.0-beta.7.zip)** — patch DLL, optional launchers and notices.
+**[Download 1.0.0-beta.8](https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota-mapmakers-patch-1.0.0-beta.8.zip)** — patch DLL, optional launchers and notices.
 
-[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.7).
+[Release notes and individual files](https://github.com/alderski-h3/hota-mapmakers-patch/releases/tag/v1.0.0-beta.8).
 GitHub’s automatic source archives contain this site’s documentation, not the
 patch implementation.
 
@@ -37,11 +37,19 @@ Randomness inspector are not searched.
 For direct launch, put `hota_mapmakers_editor.exe` from the ZIP in the same folder
 and double-click it. Use the patch launcher to manage updates.
 
+Launch focuses an editor already running from the same installation. Close an
+unpatched editor first; focusing it does not load the patch into that process.
+
 The launcher checks for signed updates on opening. Choose **Install update**;
 if the editor is open, close it normally and click **Retry**. Updates include
-both the patch and launcher. **Restore previous patch DLL** restores the last
-verified DLL without downgrading the launcher. Game and HotA updates are not
-included. No GitHub account or token is needed.
+both the patch and launcher. **Recovery → Restore previous version** restores
+the verified previous patch and launcher together. Game and HotA updates are
+not included. No GitHub account or token is needed.
+
+Update files and backups are kept in the adjacent `HotA Mapmakers Patch` folder.
+If the launcher cannot start after an update, close the editor normally and run
+`HotA Mapmakers Patch\recovery.exe`, or `hota_mapmakers_editor.exe --recover`
+from this ZIP. Do not delete recovery files during an interrupted update.
 
 The patched editor also checks for updates in the background. Updates require
 your approval and never force the editor to close.

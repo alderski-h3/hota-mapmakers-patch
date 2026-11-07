@@ -1,13 +1,14 @@
 H3PATCH-SIGNED-1
-rsa-sha256=aa8d3593c04b9961bcc5009d191a6999bd3122c4a9497feb7d34bf8edc41051dfc28bf9d03efe193881944d2d45ebc1f52b2c2e5693e97e76bc4d819c86abd5933b2cadd467a2977aeba76a1b30d60dc59cdc12be4caecb535ff9a1e76d4e05086323eaec320588ecdb1f0da693810c160ef7eac04e0261fe0154c3f2e54af258a7b88ac385f0a87ffe75e817f1e99ca814351c039610dd6a16bb480a5259f8cb5949cba84c231ff867d9e3012faf48421d2b65555b7cc962dad0fdeb9f0186c4f244838903391b2464840d9bd8ee1a51fde38974e251e0fd46e3e4a24898c25ce0861c8a8801876881f60d03af182a87e327bbb6d86cc981016ddcdca6b99d3
+rsa-sha256=3bbf36643765d295d51acbcba1b9fb38b394d85171fcaead809efd2f478219e5d4a9eb35cebabb8a53aeed03cbb2b3755cd7e281b9e416619b40b4e32810e361180b14ed806cbe775df5b946c35d23a7880dfb7958ea0881dba6ff45fd95de8cf4ab44a06587c2f48232bc40b2a2b629b3f6ecf4b7c856e20333356206cbdfc5b252566f4ac067de080b68ceefc00f741d3fbde2849ecf0696def7b7092bb26690bfc974f04ca2fe73a4d9615b11d101f249d7704d8e6a42f0f8af83c3181816f15e23ef50f9734d354fd5338e8ad8dc4d04ada064442bec4acade70e763394ceb0e27bc6410f56fa7588ed775c5340e608b47bdb0f58292772bfbfe7e7177c0
 H3PATCH-UPDATE-1
-version=1.0.0-beta.7
-sequence=2026110601
-bytes=1540608
-sha256=b9261e3ed0c1f8dcd39af25b36c81f1d2c20b74b25ce0054e923295e518a7d6b
-artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.7/hota_mapmakers_patch.dll
+version=1.0.0-beta.8
+sequence=2026110701
+bytes=1549312
+sha256=189719c91872c89a9c404aa5a472b6587f96b0e39c66ee1de578e496366efb5e
+artifact=https://github.com/alderski-h3/hota-mapmakers-patch/releases/download/v1.0.0-beta.8/hota_mapmakers_patch.dll
 notes:
-- Advanced Find can show or exclude random spells and artifacts, including possible bank reward tiers. Spell searches include guaranteed Mage Guild spells.
-- Added object reinforcements and creatures from supported extended-event combats.
-- Fixed stale results after dragging objects off the map, plus Seer's Hut bonus rewards, random-monster quest targets and bonus sorting.
-- The launcher closes after starting the patched editor.
+- Redesigned native launcher with new artwork, clearer update status and a compact changelog.
+- Install updates without a second confirmation. Launch focuses an editor already running from the same installation.
+- Restore the previous patch and launcher together, with a separate local recovery option if the launcher cannot start.
+- Update files and backups now use a dedicated HotA Mapmakers Patch folder.
+- Advanced Find omits chance-only artifact containers while retaining possible artifact classes for creature banks with an unspecified variant.
