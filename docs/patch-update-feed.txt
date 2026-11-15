@@ -1,0 +1,16 @@
+H3PATCH-SIGNED-1
+rsa-sha256=ab59a404b4d8575d96f42b0caceeaff5cb97b61089a0332ab8b60e88513e31e1fb04bba48fc9cf3deca7f0f7b4a7a1fb745edb39c2346ec2cd8a3a57828779951071b7c463aaf6a663b622697d675c95a6c93dd67075bbe4138542deae0a80138bc113440efc35fcdbc1bee1778e45174a081bd50652b741606aa2ec94934037e531450911812515e5bcdbaeac4b17be5dded7224776390d7297b5dbadf4a8cdf3d266b043b2820b046359a3e0d242991d9610e7fb663e228ef4a4f75104e13afa6d44647aaf76659a1645c7fbab71529f018de95ecb2dfd294fd87e03201d82e7853deda1ddb1692cbdb3d4da833201b6488032e6a19bb4ba7360613ae24540
+H3PATCH-CHANNEL-1
+channel=public
+H3PATCH-UPDATE-1
+version=1.0.0
+sequence=2026111503
+bytes=1745408
+sha256=ede3e6423439f33a99eae220be65114f8324bf03662ad292f2ac9a646e6ca320
+artifact=https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch.dll
+notes:
+Mapmaker’s Patch 1.0.0 for HotA 1.8.1
+
+- Multi-Brush mirrors, rotates, scales, spreads and offsets brush copies. Preview their placement and undo the whole stroke in one step.
+- Plan routes with waypoints, preview scouting coverage and search for objects, rewards or text with Advanced Find.
+- Explore battlefields and random rewards, and edit monster quantities with count and value previews.

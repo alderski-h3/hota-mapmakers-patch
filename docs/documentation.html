@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="Mapmaker’s Patch for HotA: installation and editor tool documentation."><title>Documentation — Mapmaker’s Patch for HotA</title><link rel="icon" href="assets/editor-icon.ico" sizes="any"><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="wrap site-header"><a class="brand" href="index.html"><img src="assets/editor-icon.png" alt="" width="36" height="36">Mapmaker’s Patch</a><nav aria-label="Main navigation"><a href="documentation.html" aria-current="page">Documentation</a><a href="changelog.html">Changelog</a><a href="https://github.com/alderski-h3/mapmakers-patch">GitHub</a></nav></header>
+<main id="main" class="wrap">
+  <div class="docs-layout">
+    <aside class="docs-nav"><nav aria-label="Documentation topics">
+      <a href="#installation">Installation</a>
+      <a href="#updates">Updates</a>
+      <a href="#pathfinding">Pathfinding</a>
+      <a href="#battlefield-explorer">Battlefield Explorer</a>
+      <a href="#visibility">Visibility</a>
+      <a href="#advanced-find">Advanced Find</a>
+      <a href="#randomness-inspector">Randomness inspector</a>
+      <a href="#multi-brush">Multi-brush</a>
+      <a href="#editing-utilities">Editing utilities</a>
+      <a href="#editor-dialogs">Editor dialogs</a>
+      <a href="#patch-options">Patch Options</a>
+      <a href="#reporting-issues">Reporting issues</a>
+    </nav></aside>
+    <article class="prose">
+      <h1>Documentation</h1>
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>Use HotA 1.8.1. The patch checks the installed editor and HotA files. A failed compatibility check can disable a single feature without affecting the other ones. See <strong>Help → Patch Diagnostics</strong> for the reason.</p>
+        <ol>
+          <li id="installation-download"><a href="https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip">Download the patch ZIP</a>.</li>
+          <li>Extract the release ZIP and place <code>mapmakers_patch.dll</code>, <code>mapmakers_patch_launcher.exe</code> and <code>mapmakers_editor.exe</code> beside <code>h3hota_maped.exe</code>. The launchers need write access to this game folder.</li>
+          <li>Open <code>mapmakers_patch_launcher.exe</code> and choose <strong>Launch patched editor</strong>. For direct launch, double-click <code>mapmakers_editor.exe</code>.</li>
+        </ol>
+        <p><a id="installation-checksums" href="https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/SHA256SUMS.txt">SHA-256 checksums</a> are available to verify the download.</p>
+        <p>To use the DLL without either launcher, keep it beside the editor and append <code>/p:mapmakers_patch.dll</code> to a shortcut for <code>h3hota_maped.exe</code>.</p>
+      </section>
+      <section id="updates">
+        <h2>Updates</h2>
+        <p>The launcher checks for patch updates when opened. The patched editor checks in the background and asks before opening the launcher for an update. You can also choose <strong>Help → Check for updates</strong>.</p>
+        <p>Choose <strong>Install update</strong>. If an editor is running, save your work, close it normally and click <strong>Retry</strong>. The launcher updates the DLL and both patch launchers, not Heroes III, HotA or HD Mod. It never forces the editor to close.</p>
+        <figure class="feature-shot compact-shot"><a href="assets/launcher.webp" aria-label="Open full-size launcher screenshot"><img src="assets/launcher.webp" alt="The launcher shows an available update and its changelog below the Launch patched editor button." width="1240" height="1037" loading="lazy" decoding="async"></a><figcaption>Launch the patched editor or install an available update from the same window.</figcaption></figure>
+      </section>
+      <section id="pathfinding">
+        <h2>Pathfinding</h2>
+        <p>Open from the toolbar or press <kbd>Ctrl+Shift+P</kbd>. Click a start and destination, then compare the lowest travel cost with the earliest arrival. In the movement profile, adjust the speed of the slowest creature, Logistics, hero equipment and more to see how different setups affect the journey. Route alternatives show other ways through the map.</p>
+        <p>For multiple stops, enable <strong>Plan with waypoints</strong>, click the stops in order and choose <strong>Calculate</strong>.</p>
+        <figure class="feature-shot"><a href="assets/pathfinding.webp" aria-label="Open full-size Pathfinding screenshot"><img src="assets/pathfinding.webp" alt="Route arrows cross land and sea while the Pathfinding panel lists a Day 3 arrival and each step." width="1800" height="955" loading="lazy" decoding="async"></a><figcaption>The route summary shows when the hero boards and leaves the boat.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Dead_Man%27s_Tales">Dead Man’s Tales</a> (HotA)</small></figcaption></figure>
+      </section>
+      <section id="battlefield-explorer">
+        <h2>Battlefield Explorer</h2>
+        <p>Open from the toolbar or press <kbd>Ctrl+Shift+B</kbd>. Click a tile to preview its battlefield. Use <strong>Search</strong> to filter by obstacle layout, bottlenecks and other battlefield metrics, then use <strong>Display</strong> for map highlights or supported heatmaps.</p>
+        <p>Save named favourites with notes, jump back to their coordinates and export battlefield screenshots as PNG.</p>
+        <figure class="feature-shot"><a href="assets/battlefield-explorer.webp" aria-label="Open full-size Battlefield Explorer screenshot"><img src="assets/battlefield-explorer.webp" alt="A snowy battlefield with highlighted obstacle hexes, a search results table, and the corresponding map tile." width="1800" height="999" loading="lazy" decoding="async"></a><figcaption>Select a search result to inspect the battlefield and locate it on the map.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Barren_Lands">Barren Lands</a> (HotA)</small></figcaption></figure>
+      </section>
+      <section id="visibility">
+        <h2>Visibility</h2>
+        <p>Open from the toolbar or press <kbd>Ctrl+Shift+V</kbd>. Choose a player and whether to include allies, or pick individual vision sources. A ghost hero is a temporary token that reveals tiles as a hero would, without adding a real hero to the map.</p>
+        <p>Preview shroud, Cover of Darkness, hero patrol areas and single-cast Dimension Door range.</p>
+        <figure class="feature-shot"><a href="assets/visibility.webp" aria-label="Open full-size Visibility screenshot"><img src="assets/visibility.webp" alt="Fog covers hidden terrain while vision sources are marked on the map and listed in the sidebar." width="1800" height="950" loading="lazy" decoding="async"></a><figcaption>Blue’s starting coverage with an added vision source.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Daggerwin_Valley">Daggerwin Valley</a> (HotA)</small></figcaption></figure>
+      </section>
+      <section id="advanced-find">
+        <h2>Advanced Find</h2>
+        <p>Open from the toolbar or press <kbd>Ctrl+Shift+F</kbd>. Search both levels for artifacts, spells, secondary skills, heroes, creatures, quests, resources, bonuses or text. Choose a source or category to narrow the results; click an object to locate it, or press <kbd>Enter</kbd> to open its properties where supported.</p>
+        <p>The <strong>Text</strong> tab searches authored names, signs, quest and event messages, rumours, the map title and description, and other supported text fields.</p>
+        <p class="note">The tool inspects supported extended-event rewards and text without running events or evaluating their conditions. Advanced quest conditions are not searched. A partial result means some fields could not be read.</p>
+        <figure class="feature-shot"><a href="assets/advanced-find.webp" aria-label="Open full-size Advanced Find screenshot"><img src="assets/advanced-find.webp" alt="Advanced Find lists five sources of Town Portal and selects a matching Pandora’s Box on the map." width="1800" height="955" loading="lazy" decoding="async"></a><figcaption>The Object and Contents columns show where Town Portal is available.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Daggerwin_Valley">Daggerwin Valley</a> (HotA)</small></figcaption></figure>
+      </section>
+      <section id="randomness-inspector">
+        <h2>Randomness inspector</h2>
+        <p>Open from the toolbar or press <kbd>Ctrl+Shift+R</kbd>. Pick a highlighted random artifact or shrine to see its possible pool range and proven exclusions. In <strong>Pools</strong>, select a pool to find sources that may or must draw from it.</p>
+        <p class="note">The tool does not predict rolls, estimate probabilities, or search extended events.</p>
+        <figure class="feature-shot"><a href="assets/randomness-inspector.webp" aria-label="Open full-size Randomness inspector screenshot"><img src="assets/randomness-inspector.webp" alt="The Random Minor Artifact has two possible outcomes listed: Helm of Chaos and Armor of Wonder." width="1800" height="951" loading="lazy" decoding="async"></a><figcaption>Only two outcomes are possible for this Random Minor Artifact at map startup: Helm of Chaos or Armor of Wonder.<small class="map-credit">Map: <a href="https://www.maps4heroes.com/forum/opinions.php?map_id=2809&amp;game=3">The Mysterious Island</a> by Papyjama</small></figcaption></figure>
+      </section>
+      <section id="multi-brush">
+        <h2>Multi-brush</h2>
+        <p>Open Multi-brush from the toolbar or the <strong>Tools</strong> menu. Mirror your strokes left to right, top to bottom, diagonally, or across multiple axes. Add a 90° or 180° rotation if you like. Use the map center as the pivot or pick a custom pivot with half-tile precision. Guides on the map and minimap show the pivot and mirroring axes.</p>
+        <p><strong>Custom rotation</strong> supports up to 36 placements including the original. Space them evenly around a full turn or set a fixed angle, in either direction. A few placements can make stars or petal shapes. More placements are useful for drawing circles and rings.</p>
+        <p>In <strong>Advanced Settings → Adjustments</strong>, use <strong>Copy scale</strong> to resize the copied strokes, <strong>Copy spread</strong> to move their centers closer to or farther from the pivot, and <strong>Offset X / Y</strong> to shift them by a number of tiles. Scale does not change the width of roads, rivers or exact-tile strokes.</p>
+        <p>For a row without turning, choose <strong>Rotation → No rotation</strong>, set <strong>Copies</strong> to 3 and <strong>Offset X</strong> to 2. With the default <strong>Chained</strong> behavior, each copy is two tiles farther right than the last.</p>
+        <figure class="feature-shot"><a href="assets/multi-brush.webp" aria-label="Open full-size Multi-brush screenshot"><img src="assets/multi-brush.webp" alt="Eight matching arms radiate from the center of an island. The map and minimap show the symmetry guides, and the sidebar shows the mirroring, rotation and pivot controls." width="2258" height="1538" loading="lazy" decoding="async"></a><figcaption>Eight-way mirroring around the map center.</figcaption></figure>
+        <p>Multi-brush works with terrain, roads, rivers, erasing, obstacle marks and Exact Tile Spriting. Freehand terrain appears as you drag. Area brushes apply on release. One Undo reverses the original stroke and every copy. Use the toggle next to <strong>Passability</strong> to pause or resume Multi-brush without losing your settings.</p>
+      </section>
+      <section id="editing-utilities">
+        <h2>Editing utilities</h2>
+        <h3>Copy, Cut and Paste Map Area</h3>
+        <p>Select a rectangle to copy or move ground and objects separately. Cut replaces the selected ground with your chosen terrain and can clear references to cut objects elsewhere on the map. Paste does not restore those references.</p>
+        <h3>Object ordering</h3>
+        <p>Right-click an object or use <strong>Edit</strong> to move it forward or backward one layer, bring it to the front or send it to the back without moving it to another tile.</p>
+        <figure class="feature-shot"><a href="assets/object-ordering.webp" aria-label="Open full-size Object ordering screenshot"><img src="assets/object-ordering.webp" alt="Selected ice formations beside snowy mountains, with Send to back highlighted in the context menu." width="1436" height="984" loading="lazy" decoding="async"></a><figcaption>Bring the selected ice formations in front of the snowy mountains or send them behind, without dragging them.<small class="map-credit">Map: <a href="https://www.maps4heroes.com/forum/opinions.php?map_id=2904&amp;game=3">Noble Nemesis</a> by kogeT</small></figcaption></figure>
+        <h3>Fill and resize</h3>
+        <p>Fill the active level with terrain, or use <strong>Tools → Resize Map</strong> to make a map smaller or larger. Make a copy before shrinking a map.</p>
+        <figure class="feature-shot"><a href="assets/map-resize.webp" aria-label="Open full-size Resize Map screenshot"><img src="assets/map-resize.webp" alt="The Resize Map dialog has 216 by 216 (XH) selected." width="1600" height="916" loading="lazy" decoding="async"></a><figcaption>Setting up an enlargement of Back For Revenge from 180 × 180 (H) to 216 × 216 (XH).<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Back_for_Revenge">Back for Revenge</a> (Shadow of Death)</small></figcaption></figure>
+        <h3>Map and minimap images</h3>
+        <p>Export a selected area or an entire map level. The editor saves an uncompressed BMP, so large exports can take up a lot of space. You can also save a terrain-only minimap BMP or import one that matches the map dimensions.</p>
+        <figure class="feature-shot dialog-shot map-export-shot">
+          <a href="assets/barren-lands-surface.jpg"><img src="assets/barren-lands-preview.webp" alt="Barren Lands surface with islands, coastlines and a snowy central region." width="768" height="768" loading="lazy" decoding="async">Open full-size map (5.4 MB)</a>
+          <figcaption>The entire surface of Barren Lands. This website example is compressed; the full-size image loads only when opened.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Barren_Lands">Barren Lands</a> (HotA)</small></figcaption>
+        </figure>
+      </section>
+      <section id="editor-dialogs">
+        <h2>Editor dialogs</h2>
+        <h3>Monster quantities</h3>
+        <p><strong>Random</strong> shows a creature’s minimum and maximum starting count. <strong>Custom</strong> count and <strong>Value</strong> stay in sync: edit one to see the corresponding number in the other.</p>
+        <p>For Random Monsters, use the reference dropdown to preview the Value for a given count or see which creatures are possible at a chosen Value. To use AI value instead of Value, go to <strong>Tools → Patch Options</strong>.</p>
+        <figure class="feature-shot dialog-shot"><a href="assets/monster-properties.webp" aria-label="Open full-size Monster Properties screenshot"><img src="assets/monster-properties.webp" alt="A Random Monster 3 dialog shows an AI value of 10,000, an initial count of 16–52, and counts for reference creatures." width="956" height="1208" loading="lazy" decoding="async"></a><figcaption>Compare the possible starting counts at a fixed AI value.</figcaption></figure>
+        <h3>Hero portraits</h3>
+        <p>Click a hero’s portrait to choose a new one from a visual grid. Use the <strong>Heroes</strong> page of Map Specifications to change hero availability in bulk.</p>
+        <figure class="feature-shot compact-shot"><a href="assets/hero-portraits.webp" aria-label="Open full-size Hero portraits screenshot"><img src="assets/hero-portraits.webp" alt="The Hero portraits dialog shows 35 portraits in a scrollable grid." width="1378" height="1008" loading="lazy" decoding="async"></a><figcaption>Pick a portrait by appearance instead of stepping through portrait numbers.</figcaption></figure>
+        <h3>Calendar dates</h3>
+        <p>Supported timed events and time limits display dates as month, week and day instead of a day number.</p>
+        <figure class="feature-shot dialog-shot"><a href="assets/calendar-dates.webp" aria-label="Open full-size Calendar dates screenshot"><img src="assets/calendar-dates.webp" alt="The Timed Events tab lists dates such as Month 1 Week 2 Day 1 for day 8." width="824" height="1132" loading="lazy" decoding="async"></a><figcaption>See when each timed event happens at a glance.<small class="map-credit">Map: <a href="https://heroes.thelazy.net/index.php/Trial_of_Flame">Trial of Flame</a> (HotA)</small></figcaption></figure>
+        <p>The patch also enlarges the Open Map dialog and message boxes for supported events, Pandora’s Boxes and Seer’s Huts. The recent-map list holds up to ten maps.</p>
+      </section>
+      <section id="patch-options">
+        <h2>Patch Options</h2>
+        <p>Use <strong>Tools → Patch Options</strong> to set default monster properties, choose Auto, English or draft Russian patch text, or switch monster quantity previews to AI value. The launcher shares the saved language preference; native HotA text is unchanged.</p>
+        <p><strong>Non-standard editor features</strong> are off by default. This opt-in unlocks Advanced Properties for supported objects, Exact Tile Spriting and Fog, custom map sizes, single-square painting, exact or partially smoothed paste/import, relaxed placement and road edges, and fewer than four secondary skills.</p>
+        <p class="note">Maps with Fog or non-standard dimensions need the patched editor to open safely. Turning the option off does not convert existing maps. Use <strong>Validate Map</strong> to check for those compatibility reasons.</p>
+      </section>
+      <section id="reporting-issues">
+        <h2>Reporting issues</h2>
+        <p>Contact <strong>alderski</strong> on the <a href="https://discord.com/invite/horn-of-the-abyss-519540110195425280">HotA Discord server</a>. Include the patch version, relevant <strong>Help → Patch Diagnostics</strong> rows, the map name, coordinates and steps to reproduce. Ask the author before sharing a private map.</p>
+      </section>
+    </article>
+  </div>
+<script src="release.js" defer></script></main>
+<footer class="wrap"><p>An unofficial map editor patch by alderski.</p></footer></body></html>

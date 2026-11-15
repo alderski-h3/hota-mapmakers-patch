@@ -1,0 +1,11 @@
+{
+  "status": "published",
+  "version": "1.0.0",
+  "date": "2026-11-15",
+  "downloads": {
+    "bundle": "https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip",
+    "dll": "https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch.dll",
+    "launcher": "https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch_launcher.exe",
+    "checksums": "https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/SHA256SUMS.txt"
+  }
+}

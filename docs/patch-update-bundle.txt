@@ -1,0 +1,19 @@
+H3PATCH-SIGNED-1
+rsa-sha256=0cc2690b60cb012c68981d4ecb3188a4ebb9d78d52aab0cf21df9736faf3dcfd6481de49e8a986f4dd698f8f8776725b00f4a08f411da71ae3a471da32d8b58776d9dab507976e4d12ad4121fb6d187d1b7af09408b58496c33c1928b69cdf63e095e23baa2befa455b16f19fa9e9334edf92af6581f4ed061e8cfb28c4708d8af04f9ffabaa466beac3601c53c5a01884882c83023f553dd83546dfeaee84a859e5eb021077a3c9badeca60cb543bca9c7d6e623aee1ab8a5322421d7a18c614c5143902147b638d5d10a7f43be6c85f73b0fd72e8c613d111737a36fedd1d22386a67d058a0434a7a116dfe7cf400df321fec78d78c989cb07f0c5a5cce6bd
+H3PATCH-CHANNEL-1
+channel=public
+H3PATCH-BUNDLE-1
+version=1.0.0
+sequence=2026111503
+bytes=1745408
+sha256=ede3e6423439f33a99eae220be65114f8324bf03662ad292f2ac9a646e6ca320
+artifact=https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch.dll
+launcher-bytes=3740672
+launcher-sha256=612a334988b585a97566e55d7bb7d8a550ec9db25c23a2915e62c047adff57f3
+launcher-artifact=https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch_launcher.exe
+notes:
+Mapmaker’s Patch 1.0.0 for HotA 1.8.1
+
+- Multi-Brush mirrors, rotates, scales, spreads and offsets brush copies. Preview their placement and undo the whole stroke in one step.
+- Plan routes with waypoints, preview scouting coverage and search for objects, rewards or text with Advanced Find.
+- Explore battlefields and random rewards, and edit monster quantities with count and value previews.
