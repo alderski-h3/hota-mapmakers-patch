@@ -11,5 +11,5 @@ First public release for HotA 1.8.1.
 - Editing tools include map area copy, cut and paste, object ordering, terrain and image tools, and clearer monster quantity, hero portrait and calendar dialogs.
 - The optional launcher checks for signed updates to the patch DLL and both launcher files. It does not update Heroes III, HotA or HD Mod.
 
-[Download ZIP](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip) ·
+[Download](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip) ·
 [Installation and tool documentation](https://alderski-h3.github.io/mapmakers-patch/documentation.html)

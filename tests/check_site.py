@@ -41,11 +41,11 @@ assert not any('/issues' in ref for page in pages.values() for ref in page.refs)
 release = json.loads((ROOT / 'release.json').read_text())
 if release['status'] == 'published':
     version = release['version']
-    prefix = f'https://github.com/alderski-h3/mapmakers-patch/releases/download/v{version}/'
+    prefix = 'https://github.com/alderski-h3/mapmakers-patch/releases/download/'
     assets = release['downloads']
-    assert {'bundle', 'dll', 'launcher', 'checksums'} <= assets.keys()
-    for link in assets.values():
-        assert link.startswith(prefix) and link in pages['index.html'].refs, link
-    for key in ('bundle', 'checksums'):
-        assert assets[key] in pages['documentation.html'].refs, key
+    assert assets.keys() == {'bundle'}
+    link = assets['bundle']
+    assert link.startswith(f'{prefix}v{version}/') and link.endswith('.zip'), link
+    for name in ('index.html', 'documentation.html'):
+        assert [ref for ref in pages[name].refs if ref.startswith(prefix)] == [link], name
 print('PASS: local links, anchors, assets and release-script targets')

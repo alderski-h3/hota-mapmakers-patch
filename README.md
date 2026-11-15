@@ -9,8 +9,7 @@ maintained separately.
 ## Download
 
 **1.0.0 for HotA 1.8.1** ·
-[Download ZIP](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip) ·
-[SHA-256 checksums](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/SHA256SUMS.txt) ·
+[Download](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip) ·
 [Release notes](https://github.com/alderski-h3/mapmakers-patch/releases/tag/v1.0.0)
 
 GitHub’s automatic source archives contain this site’s documentation, not the
