@@ -8,9 +8,9 @@ maintained separately.
 
 ## Download
 
-**1.0.0 for HotA 1.8.1** ·
-[Download](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip) ·
-[Release notes](https://github.com/alderski-h3/mapmakers-patch/releases/tag/v1.0.0)
+**1.1.0 for HotA 1.8.1** ·
+[Download](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.1.0/Mapmakers-Patch-1.1.0.zip) ·
+[Release notes](https://github.com/alderski-h3/mapmakers-patch/releases/tag/v1.1.0)
 
 GitHub’s automatic source archives contain this site’s documentation, not the
 patch implementation.
@@ -23,6 +23,7 @@ patch implementation.
 - Advanced Find: artifacts, spells, secondary skills, heroes, creatures, quests, resources and bonuses in supported objects and events.
 - Randomness inspector: artifact/spell pool bounds and exclusions, without random simulations.
 - Multi-brush: mirror and rotate brush strokes around a pivot. Custom rotation allows up to 36 placements including the original. Adjust copy scale, spread and offset, and undo the whole stroke in one step.
+- [Terrain, roads and scenery](https://alderski-h3.github.io/mapmakers-patch/documentation.html#terrain-roads-and-scenery): Connected Fill, Ellipse and Rectangle brushes, Adapt objects and rivers, Regenerate Objects, and Connected Replace for roads and rivers.
 - In-place object ordering, portrait chooser and map area copy/cut/paste.
 
 Non-standard editor features are behind an off-by-default checkbox.

@@ -12,6 +12,7 @@
       <a href="#advanced-find">Advanced Find</a>
       <a href="#randomness-inspector">Randomness inspector</a>
       <a href="#multi-brush">Multi-brush</a>
+      <a href="#terrain-roads-and-scenery">Terrain, roads and scenery</a>
       <a href="#editing-utilities">Editing utilities</a>
       <a href="#editor-dialogs">Editor dialogs</a>
       <a href="#patch-options">Patch Options</a>
@@ -23,7 +24,7 @@
         <h2>Installation</h2>
         <p>Use HotA 1.8.1. The patch checks the installed editor and HotA files. A failed compatibility check can disable a single feature without affecting the other ones. See <strong>Help → Patch Diagnostics</strong> for the reason.</p>
         <ol>
-          <li id="installation-download"><a href="https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/Mapmakers-Patch-1.0.0.zip">Download</a>.</li>
+          <li id="installation-download"><a href="https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.1.0/Mapmakers-Patch-1.1.0.zip">Download</a>.</li>
           <li>Extract the release ZIP and place <code>mapmakers_patch.dll</code>, <code>mapmakers_patch_launcher.exe</code> and <code>mapmakers_editor.exe</code> beside <code>h3hota_maped.exe</code>. The launchers need write access to this game folder.</li>
           <li>Open <code>mapmakers_patch_launcher.exe</code> and choose <strong>Launch patched editor</strong>. For direct launch, double-click <code>mapmakers_editor.exe</code>.</li>
         </ol>
@@ -74,6 +75,21 @@
         <p>For a row without turning, choose <strong>Rotation → No rotation</strong>, set <strong>Copies</strong> to 3 and <strong>Offset X</strong> to 2. With the default <strong>Chained</strong> behavior, each copy is two tiles farther right than the last.</p>
         <figure class="feature-shot"><a href="assets/multi-brush.webp" aria-label="Open full-size Multi-brush screenshot"><img src="assets/multi-brush.webp" alt="Eight matching arms radiate from the center of an island. The map and minimap show the symmetry guides, and the sidebar shows the mirroring, rotation and pivot controls." width="2258" height="1538" loading="lazy" decoding="async"></a><figcaption>Eight-way mirroring around the map center.</figcaption></figure>
         <p>Multi-brush works with terrain, roads, rivers, erasing, obstacle marks and Exact Tile Spriting. Freehand terrain appears as you drag. Area brushes apply on release. One Undo reverses the original stroke and every copy. Use the toggle next to <strong>Passability</strong> to pause or resume Multi-brush without losing your settings.</p>
+      </section>
+      <section id="terrain-roads-and-scenery">
+        <h2>Terrain, roads and scenery</h2>
+        <h3>Adapt objects and rivers</h3>
+        <p>Turn on <strong>Adapt objects and rivers</strong> above the Terrain brush choices. When a brush or fill changes the terrain type, compatible scenery, object appearances and rivers adapt alongside it. One Undo reverts the terrain and its adaptations. The toggle starts off each time you open the editor.</p>
+        <h3>Connected Fill</h3>
+        <p>Choose <strong>Tools → Terrain → Connected Fill</strong> or press <kbd>N</kbd>. Select the new terrain, then click the area to replace. Tiles of the clicked terrain count as connected if they share an edge or corner. With Multi-brush, each copy starts its own fill; one Undo reverts them all.</p>
+        <h3>Ellipse Brush</h3>
+        <p>Choose <strong>Tools → Terrain → Ellipse Brush</strong> or press <kbd>B</kbd>, then drag to draw an ellipse. Hold <kbd>Shift</kbd> for a circle or <kbd>Alt</kbd> to draw outward from the starting tile. Release to paint.</p>
+        <h3>Rectangle Brush</h3>
+        <p>The Area Brush is now <strong>Rectangle Brush</strong> (<kbd>V</kbd>). Drag from corner to corner, hold <kbd>Shift</kbd> for a square, or hold <kbd>Alt</kbd> to draw from the center. Both shape brushes preview Multi-brush copies before you release.</p>
+        <h3>Regenerate Objects</h3>
+        <p>In the Obstacle tool, mark the area you want to refresh, then choose <strong>Regenerate Objects</strong> or press <kbd>Shift+G</kbd>. This replaces existing scenery in the marked area and updates compatible object appearances without blocking previously open tiles.</p>
+        <h3>Connected Replace for roads and rivers</h3>
+        <p>Turn on <strong>Connected Replace</strong> above the type swatches in the Road or River tool. Pick the new type and draw as usual. When your stroke touches a road or river of another type, the connected section switches to the selected type and you can keep drawing. Edge contact counts, but corner-only contact does not. Matching river deltas change too. One Undo reverts the whole stroke.</p>
       </section>
       <section id="editing-utilities">
         <h2>Editing utilities</h2>

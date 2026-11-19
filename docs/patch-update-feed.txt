@@ -1,16 +1,17 @@
 H3PATCH-SIGNED-1
-rsa-sha256=ab59a404b4d8575d96f42b0caceeaff5cb97b61089a0332ab8b60e88513e31e1fb04bba48fc9cf3deca7f0f7b4a7a1fb745edb39c2346ec2cd8a3a57828779951071b7c463aaf6a663b622697d675c95a6c93dd67075bbe4138542deae0a80138bc113440efc35fcdbc1bee1778e45174a081bd50652b741606aa2ec94934037e531450911812515e5bcdbaeac4b17be5dded7224776390d7297b5dbadf4a8cdf3d266b043b2820b046359a3e0d242991d9610e7fb663e228ef4a4f75104e13afa6d44647aaf76659a1645c7fbab71529f018de95ecb2dfd294fd87e03201d82e7853deda1ddb1692cbdb3d4da833201b6488032e6a19bb4ba7360613ae24540
+rsa-sha256=dfb0f701cd51316a81f2ef2ad4750e31657c2dd9fc0a9c34d8591a034e6f8322e409bfa910deef7d5bb31242275ec2b4dcf6505519c0a1672145322e0e8cf543ad6a292baca42718b97690d156fd5c946024e01872ef6d66d1b10994a72b6264efd3ee19be66d1feabb197e2b77d35f4cb0571fbd605b3cbfeeec9399f6d31daeab4216fd88463ff9a476a05e5875a0888b883067970084bde2204709ea15bd196cb943c506decbc3bc50f739b1e91e5b514cd4c9fed2fa9a1229c6ca3f466d117e921229099401186752ecd375b42841a7fcfd0fb20b74bf901d2aee41dafe6c515bd34fc78affe507eba7191a85a674f486af848eeebb7d18e9bfe6541451b
 H3PATCH-CHANNEL-1
 channel=public
 H3PATCH-UPDATE-1
-version=1.0.0
-sequence=2026111503
-bytes=1745408
-sha256=ede3e6423439f33a99eae220be65114f8324bf03662ad292f2ac9a646e6ca320
-artifact=https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.0.0/mapmakers_patch.dll
+version=1.1.0
+sequence=2026111902
+bytes=1853440
+sha256=e85c82ea96857deb0e0e1f9b82bc5ea91a1301b2372f40dbf5b63b9f928f680b
+artifact=https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.1.0/mapmakers_patch.dll
 notes:
-Mapmaker’s Patch 1.0.0 for HotA 1.8.1
-
-- Multi-Brush mirrors, rotates, scales, spreads and offsets brush copies. Preview their placement and undo the whole stroke in one step.
-- Plan routes with waypoints, preview scouting coverage and search for objects, rewards or text with Advanced Find.
-- Explore battlefields and random rewards, and edit monster quantities with count and value previews.
+- Adapt objects and rivers: A new Terrain tool mode that updates scenery, compatible objects, and rivers as you change terrain.
+- Connected Fill: A new Terrain brush that paints a connected region of terrain.
+- Ellipse Brush: Draw ellipses with the Terrain tool. Hold Shift to draw a circle or Alt to draw from the center.
+- Rectangle Brush: The Area Brush has been renamed. Hold Shift to draw a square or Alt to draw from the center.
+- Regenerate Objects: A new Obstacle tool action that refreshes existing scenery in the marked area and updates compatible object appearances.
+- Connected Replace for roads and rivers: Keep drawing while the brush replaces connected roads or rivers it touches. Matching river deltas change too.

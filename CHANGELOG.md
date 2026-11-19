@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0 — 2026-11-19
+
+- **Adapt objects and rivers:** A new Terrain tool mode that updates scenery, compatible objects, and rivers as you change terrain.
+- **Connected Fill:** A new Terrain brush that paints a connected region of terrain.
+- **Ellipse Brush:** Draw ellipses with the Terrain tool. Hold Shift to draw a circle or Alt to draw from the center.
+- **Rectangle Brush:** The Area Brush has been renamed. Hold Shift to draw a square or Alt to draw from the center.
+- **Regenerate Objects:** A new Obstacle tool action that refreshes existing scenery in the marked area and updates compatible object appearances.
+- **Connected Replace for roads and rivers:** Keep drawing while the brush replaces connected roads or rivers it touches. Matching river deltas change too.
+
+[Download](https://github.com/alderski-h3/mapmakers-patch/releases/download/v1.1.0/Mapmakers-Patch-1.1.0.zip) ·
+[GitHub release](https://github.com/alderski-h3/mapmakers-patch/releases/tag/v1.1.0) ·
+[Installation and tool documentation](https://alderski-h3.github.io/mapmakers-patch/documentation.html)
+
 ## 1.0.0 — 2026-11-15
 
 First public release for HotA 1.8.1.
